@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  entitycore:
+    image: ${DOCKER_REGISTRY-}entitycore
+    build:
+      context: .
+      dockerfile: entitycore/Dockerfile
